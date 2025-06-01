@@ -1,6 +1,6 @@
 <nav id="main-navbar"
-     class="navbar is-fixed-top px-16 {{ request()->routeIs('siswa.index') || request()->routeIs('berkasi.siswa.index') ? 'navbar-white-bg' : 'navbar-white-text' }}"
-     style="background-color: transparent; box-shadow: none;"
+     class="navbar is-fixed-top px-16 {{ request()->is('/') ? 'navbar-white-text' : 'navbar-white-bg' }}"
+     style="background-color: {{ request()->is('/') ? 'transparent' : 'white' }}; box-shadow: none;"
      role="navigation" aria-label="main navigation">
 
     <div class="navbar-brand">
@@ -79,28 +79,36 @@
     #main-navbar {
         transition: background-color 0.3s ease, color 0.3s ease;
     }
+
+    .navbar-white-bg {
+        background-color: white !important;
+    }
 </style>
 
 <script>
     document.addEventListener('DOMContentLoaded', function () {
         const navbar = document.getElementById('main-navbar');
-
-        // Cek route di server-side, lalu kirim ke JS
-        const isWhiteNavbarPage = @json(request()->routeIs('siswa.index') || request()->routeIs('berkasi.siswa.index'));
+        
+        // Cek apakah sedang di halaman beranda
+        const isHomePage = @json(request()->is('/'));
 
         function updateNavbarTextColor() {
-            if (!isWhiteNavbarPage) {
+            if (isHomePage) {
                 if (window.scrollY > 0) {
                     navbar.classList.remove('navbar-white-text');
                     navbar.classList.add('navbar-white-bg');
+                    navbar.style.backgroundColor = 'white';
                 } else {
                     navbar.classList.add('navbar-white-text');
                     navbar.classList.remove('navbar-white-bg');
+                    navbar.style.backgroundColor = 'transparent';
                 }
             }
         }
 
-        updateNavbarTextColor();
-        window.addEventListener('scroll', updateNavbarTextColor);
+        if (isHomePage) {
+            updateNavbarTextColor();
+            window.addEventListener('scroll', updateNavbarTextColor);
+        }
     });
 </script>

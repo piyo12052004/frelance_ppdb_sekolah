@@ -10,7 +10,7 @@
             <nav class="mb-8">
                 <ol class="flex items-center space-x-2 text-sm">
                     <li>
-                        <a href="{{ route('news.index') }}" class="text-blue-600 hover:text-blue-800">Berita</a>
+                        <a href="{{ route('app.news.index') }}" class="text-blue-600 hover:text-blue-800">Berita</a>
                     </li>
                     <li class="text-gray-500">/</li>
                     <li class="text-gray-500">{{ $news->title }}</li>
@@ -95,7 +95,7 @@
                                     <p class="text-gray-600 mb-4 line-clamp-2">
                                         {{ Str::limit(strip_tags($related->content), 100) }}
                                     </p>
-                                    <a href="{{ route('news.show', $related->slug) }}" class="text-blue-600 font-medium flex items-center">
+                                    <a href="{{ route('app.news.show', $related->slug) }}" class="text-blue-600 font-medium flex items-center">
                                         Baca selengkapnya
                                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="ml-1 h-4 w-4">
                                             <polyline points="9 18 15 12 9 6"></polyline>

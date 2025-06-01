@@ -16,7 +16,7 @@
                 <div class="mt-8 flex flex-wrap justify-center gap-4">
                     <a href="" class="inline-flex items-center justify-center !text-white rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-blue-600 text-white hover:bg-blue-700 h-11 px-8">
                         PPDB Online
-                    </a>
+                    </a>    
                 
                 </div>
             </div>
@@ -388,7 +388,7 @@
                             <p class="text-gray-600 mb-4 line-clamp-3">
                                 {{ Str::limit(strip_tags($item->content), 150) }}
                             </p>
-                            <a href="{{ route('news.show', $item->slug) }}" class="text-blue-600 font-medium flex items-center">
+                            <a href="{{ route('app.news.show', $item->slug) }}" class="text-blue-600 font-medium flex items-center">
                                 Baca selengkapnya
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="ml-1 h-4 w-4">
                                     <polyline points="9 18 15 12 9 6"></polyline>
@@ -407,7 +407,7 @@
             </div>
 
             <div class="flex justify-center mt-8">
-                <a href="{{ route('news.index') }}" class="inline-flex items-center justify-center rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-10 px-4 py-2">
+                <a href="{{ route('app.news.index') }}" class="inline-flex items-center justify-center rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-10 px-4 py-2">
                     Lihat Semua Berita
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="ml-2 h-4 w-4">
                         <polyline points="9 18 15 12 9 6"></polyline>
@@ -452,7 +452,7 @@
             </div>
 
             <div class="flex justify-center mt-8">
-                <a href="{{ route('gallery.index') }}" class="inline-flex items-center justify-center rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-10 px-4 py-2 flex items-center gap-2">
+                <a href="{{ route('app.gallery.index') }}" class="inline-flex items-center justify-center rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-10 px-4 py-2 flex items-center gap-2">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4">
                         <rect width="18" height="18" x="3" y="3" rx="2" ry="2"></rect>
                         <circle cx="9" cy="9" r="2"></circle>

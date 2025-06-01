@@ -1,52 +1,74 @@
-@extends('../../main')
+@extends('Module.Dashboard.layouts.superadmin')
 
-@section('title', 'Berita & Kegiatan')
+@section('title', 'Kelola Berita')
 
 @section('content')
-<div class="py-16">
-    <div class="container">
-        <div class="flex flex-col items-center text-center mb-12">
-            <h1 class="text-3xl font-bold">Berita & Kegiatan</h1>
-            <div class="w-20 h-1 bg-blue-600 mt-4 mb-6"></div>
-            <p class="max-w-3xl text-gray-600">Informasi terbaru tentang kegiatan dan prestasi SMP Karya Guna.</p>
-        </div>
+<div class="container mx-auto">
+    <div class="flex justify-between items-center mb-6">
+        <h1 class="text-2xl font-bold text-gray-800">Kelola Berita</h1>
+        <a href="{{ route('superadmin.news.create') }}" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+            Tambah Berita
+        </a>
+    </div>
 
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-            @forelse ($news as $item)
-                <div class="rounded-lg border bg-card text-card-foreground shadow-sm overflow-hidden">
-                    <div class="h-48 relative">
-                        @if($item->image)
-                            <img src="{{ asset($item->image) }}" alt="{{ $item->title }}" class="object-cover w-full h-full">
-                        @else
-                            <img src="https://via.placeholder.com/600x400?text=No+Image" alt="{{ $item->title }}" class="object-cover w-full h-full">
-                        @endif
-                        <div class="absolute top-0 left-0 bg-blue-600 text-white px-3 py-1 text-sm">
+    @if(session('success'))
+        <div class="bg-green-100 border border-green-400 text-green-700 px-4 py-3 rounded relative mb-4" role="alert">
+            <span class="block sm:inline">{{ session('success') }}</span>
+        </div>
+    @endif
+
+    <div class="bg-white shadow-md rounded-lg overflow-hidden">
+        <table class="min-w-full divide-y divide-gray-200">
+            <thead class="bg-gray-50">
+                <tr>
+                    <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Judul</th>
+                    <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Gambar</th>
+                    <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Status</th>
+                    <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Tanggal Publikasi</th>
+                    <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Aksi</th>
+                </tr>
+            </thead>
+            <tbody class="bg-white divide-y divide-gray-200">
+                @forelse($news as $item)
+                    <tr>
+                        <td class="px-6 py-4 whitespace-nowrap">
+                            <div class="text-sm font-medium text-gray-900">{{ $item->title }}</div>
+                        </td>
+                        <td class="px-6 py-4 whitespace-nowrap">
+                            @if($item->image)
+                                <img src="{{ asset($item->image) }}" alt="{{ $item->title }}" class="h-12 w-12 object-cover rounded">
+                            @else
+                                <span class="text-gray-500">Tidak ada gambar</span>
+                            @endif
+                        </td>
+                        <td class="px-6 py-4 whitespace-nowrap">
+                            <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full {{ $item->is_published ? 'bg-green-100 text-green-800' : 'bg-red-100 text-red-800' }}">
+                                {{ $item->is_published ? 'Dipublikasi' : 'Draft' }}
+                            </span>
+                        </td>
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
                             {{ $item->published_date->format('d M Y') }}
-                        </div>
-                    </div>
-                    <div class="p-6">
-                        <h3 class="font-bold text-lg mb-2">{{ $item->title }}</h3>
-                        <p class="text-gray-600 mb-4 line-clamp-3">
-                            {{ Str::limit(strip_tags($item->content), 150) }}
-                        </p>
-                        <a href="{{ route('news.show', $item->slug) }}" class="text-blue-600 font-medium flex items-center">
-                            Baca selengkapnya
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="ml-1 h-4 w-4">
-                                <polyline points="9 18 15 12 9 6"></polyline>
-                            </svg>
-                        </a>
-                    </div>
-                </div>
-            @empty
-                <div class="col-span-3 text-center py-12">
-                    <p class="text-gray-600">Belum ada berita yang dipublikasikan.</p>
-                </div>
-            @endforelse
-        </div>
+                        </td>
+                        <td class="px-6 py-4 whitespace-nowrap text-sm font-medium">
+                            <a href="{{ route('superadmin.news.edit', $item) }}" class="text-indigo-600 hover:text-indigo-900 mr-3">Edit</a>
+                            <button onclick="openDeleteModal({{ $item->id }}, '{{ $item->title }}', 'berita', '{{ route('superadmin.news.destroy', $item) }}')" class="text-red-600 hover:text-red-900">Hapus</button>
+                        </td>
+                    </tr>
+                @empty
+                    <tr>
+                        <td colspan="5" class="px-6 py-4 text-center text-gray-500">
+                            Belum ada berita
+                        </td>
+                    </tr>
+                @endforelse
+            </tbody>
+        </table>
+    </div>
 
-        <div class="mt-8">
-            {{ $news->links() }}
-        </div>
+    <div class="mt-6">
+        {{ $news->links() }}
     </div>
 </div>
+
+@include('Module.Dashboard.Partials.delete-modal')
 @endsection 

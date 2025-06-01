@@ -18,6 +18,7 @@ class AdminSeeder extends Seeder
             'status_users_id' => 1,
             'is_aktif' => true,
             'kode_eksternal' => 'ADMIN',
+            'role' => 'superadmin'
         ]);
     }
 } 

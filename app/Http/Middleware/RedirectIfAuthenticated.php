@@ -21,7 +21,15 @@ class RedirectIfAuthenticated
 
         foreach ($guards as $guard) {
             if (Auth::guard($guard)->check()) {
-                return redirect(RouteServiceProvider::HOME);
+                $user = Auth::guard($guard)->user();
+                
+                // Jika user sudah login dan mencoba akses halaman login
+                if ($request->is('login')) {
+                    if ($user->role === 'superadmin') {
+                        return redirect('/superadmin/dashboard');
+                    }
+                    return redirect('/');
+                }
             }
         }
 

@@ -1,4 +1,4 @@
-@extends('../../main')
+@extends('Module.Dashboard.layouts.superadmin')
 
 @section('title', 'Tambah Berita Baru')
 
@@ -8,13 +8,13 @@
         <div class="max-w-4xl mx-auto">
             <div class="flex justify-between items-center mb-8">
                 <h1 class="text-3xl font-bold">Tambah Berita Baru</h1>
-                <a href="{{ route('news.index') }}" class="inline-flex items-center justify-center rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-10 px-4 py-2">
+                <a href="{{ route('superadmin.news.index') }}" class="inline-flex items-center justify-center rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-10 px-4 py-2">
                     Kembali ke Daftar Berita
                 </a>
             </div>
 
             <div class="bg-white rounded-lg shadow-sm p-6">
-                <form action="{{ route('news.store') }}" method="POST" enctype="multipart/form-data" class="space-y-6">
+                <form action="{{ route('superadmin.news.store') }}" method="POST" enctype="multipart/form-data" class="space-y-6">
                     @csrf
 
                     <div class="space-y-2">
@@ -73,16 +73,4 @@
         </div>
     </div>
 </div>
-
-@push('scripts')
-<script src="https://cdn.tiny.cloud/1/no-api-key/tinymce/6/tinymce.min.js" referrerpolicy="origin"></script>
-<script>
-    tinymce.init({
-        selector: '#content',
-        plugins: 'anchor autolink charmap codesample emoticons image link lists media searchreplace table visualblocks wordcount',
-        toolbar: 'undo redo | blocks fontfamily fontsize | bold italic underline strikethrough | link image media table | align lineheight | numlist bullist indent outdent | emoticons charmap | removeformat',
-        height: 400
-    });
-</script>
-@endpush
-@endsection 
+@endsection
