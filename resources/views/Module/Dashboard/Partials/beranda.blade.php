@@ -428,8 +428,23 @@
                                     <p class="text-gray-600">ppdb_karyagunajaya</p>
                                 </div>
                             </div>
+                            <div class="flex items-start gap-4">
+                                <div class="bg-blue-600 text-white p-3 rounded-full">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-5 w-5">
+                                        <rect x="3" y="4" width="18" height="16" rx="2" ry="2"></rect>
+                                        <path d="M3 8h18"></path>
+                                        <circle cx="8" cy="6" r="1"></circle>
+                                        <circle cx="12" cy="6" r="1"></circle>
+                                        <circle cx="16" cy="6" r="1"></circle>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h3 class="font-bold text-lg">Website</h3>
+                                    <p class="text-gray-600">Karya Guna Jaya</p>
+                                </div>
+                            </div>
+                            </div>
                         </div>
-
                         <div class="mt-8">
                             <h3 class="font-bold text-lg mb-4">Jam Operasional</h3>
                             <div class="space-y-2">
