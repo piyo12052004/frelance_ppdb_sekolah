@@ -171,7 +171,7 @@
                 </div>
 
                 @foreach(['akademik', 'olahraga', 'teknologi', 'penunjang'] as $category)
-                <div x-show="activeTab === '{{ $category }}'" class="grid grid-cols-1 md:grid-cols-3 gap-6" style="display: none;">
+                <div x-show="activeTab == '{{ $category }}'" class="grid grid-cols-1 md:grid-cols-3 gap-6" style="display: none;">
                     @php
                         $categoryFacilities = $fasilitas->where('category', $category);
                     @endphp
@@ -179,11 +179,11 @@
                     @forelse($categoryFacilities as $facility)
                     <div class="bg-white rounded-lg shadow-sm">
                         <div class="h-48 relative mb-4 rounded-md overflow-hidden">
-                            <img src="{{ asset('storage/' . $facility->image) }}" alt="{{ $facility->name }}" class="object-cover w-full h-full">
+                            <img src="{{ asset('storage/' . $facility?->image) }}" alt="{{ $facility?->name }}" class="object-cover w-full h-full">
                         </div>
                         <div class="deskripsi pt-4 pb-12 px-5">
-                            <h3 class="font-bold text-lg mb-2">{{ $facility->name }}</h3>
-                            <p class="text-gray-600">{{ $facility->description }}</p>
+                            <h3 class="font-bold text-lg mb-2">{{ $facility?->name }}</h3>
+                            <p class="text-gray-600">{{ $facility?->description }}</p>
                         </div>
                     </div>
                     @empty

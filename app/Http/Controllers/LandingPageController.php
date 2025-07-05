@@ -20,7 +20,7 @@ class LandingPageController extends Controller
 
         $programUnggulan = ProgramUnggulan::latest()->take(6)->get();
 
-        $fasilitas = Facility::latest()->take(6)->get();
+        $fasilitas = Facility::latest()->get();
 
         $gallery = Gallery::latest()->take(6)->get();
 
