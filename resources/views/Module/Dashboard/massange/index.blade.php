@@ -1,13 +1,13 @@
 @extends('Module.Dashboard.layouts.superadmin')
 
-@section('title', 'Program Unggulan')
+@section('title', 'Pesan')
 
 @section('content')
 <div class="container mx-auto px-4 sm:px-6 lg:px-8">
     <div class="sm:flex sm:items-center">
         <div class="sm:flex-auto">
             <h1 class="text-2xl font-semibold text-gray-900">PESAN</h1>
-            <p class="mt-2 text-sm text-gray-700">Pesan dan Keritik</p>
+            <p class="mt-2 text-sm text-gray-700">Pesan dan Kritik</p>
         </div>
         {{-- <div class="mt-4 sm:mt-0 sm:ml-16 sm:flex-none">
             <a href="{{ route('superadmin.program-unggulan.create') }}" class="inline-flex items-center justify-center rounded-md border border-transparent bg-blue-600 px-4 py-2 text-sm font-medium text-white shadow-sm hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 sm:w-auto">

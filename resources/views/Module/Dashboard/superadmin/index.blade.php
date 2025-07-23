@@ -5,9 +5,9 @@
 @section('content')
 <div class="space-y-6">
     <div class="flex justify-between items-center">
-        <h1 class="text-2xl font-bold text-gray-900">Dashboard</h1>
+        <h1 class="text-2xl font-bold text-gray-900">Beranda</h1>
         <div class="flex space-x-4">
-            <span class="text-sm text-gray-600">Welcome back, {{ auth()->user()?->name ?? 'Admin' }}</span>
+            <span class="text-sm text-gray-600">Selamat Datang, {{ auth()->user()?->name ?? 'Admin' }}</span>
         </div>
     </div>
 

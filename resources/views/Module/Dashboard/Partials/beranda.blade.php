@@ -428,6 +428,26 @@
                                     <p class="text-gray-600">ppdb_karyagunajaya</p>
                                 </div>
                             </div>
+                            <div class="flex items-start gap-4">
+                                <div class="bg-blue-600 text-white p-3 rounded-full">
+                                    <svg xmlns="http://www.w3.org/2000/svg"
+                                        viewBox="0 0 24 24"
+                                        fill="none"
+                                        stroke="currentColor"
+                                        stroke-width="2"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        class="h-5 w-5">
+                                        <circle cx="12" cy="12" r="10"></circle>
+                                        <line x1="2" y1="12" x2="22" y2="12"></line>
+                                        <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h3 class="font-bold text-lg">Website</h3>
+                                    <p class="text-gray-600">Karyagunajaya</p>
+                                </div>
+                            </div>
                         </div>
 
                         <div class="mt-8">
