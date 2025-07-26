@@ -85,7 +85,6 @@ class GalleryController extends Controller
 
     public function destroy(Gallery $gallery)
     {
-        
         if ($gallery->image && file_exists(public_path($gallery->image))) {
             unlink(public_path($gallery->image));
         }

@@ -28,7 +28,9 @@
                     @endif
                     <div class="flex justify-end space-x-2">
                         <a href="{{ route('superadmin.gallery.edit', $gallery) }}" class="text-indigo-600 hover:text-indigo-900">Edit</a>
-                        <button onclick="openDeleteModal({{ $gallery->id }}, '{{ $gallery->title }}', 'foto', '{{ route('superadmin.gallery.destroy', $gallery) }}')" class="text-red-600 hover:text-red-900">Hapus</button>
+                        <button onclick="openDeleteModal({{ $gallery->id }}, '{{ $gallery->title }}', 'foto', '{{ route('superadmin.gallery.destroy', $gallery) }}')" class="text-red-600 hover:text-red-900">
+                            Hapus
+                        </button>
                     </div>
                 </div>
             </div>
@@ -50,9 +52,10 @@
 @push('scripts')
 <script>
     function openDeleteModal(id, title, type, route) {
+        console.log(id,title,type,route);
         const modal = document.getElementById('deleteModal');
         const form = document.getElementById('deleteForm');
-        const titleSpan = document.getElementById('galleryTitle');
+        const titleSpan = document.getElementById('itemTitle');
 
         form.action = route;
         titleSpan.textContent = title;
