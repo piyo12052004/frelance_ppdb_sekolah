@@ -292,7 +292,7 @@
                     <button type="button"
                         onclick="showSuccessToast('Berkas sedang diverifikasi, tidak bisa diedit.')"
                         class="w-full bg-blue-600 text-white py-2 px-6 rounded-lg text-sm hover:bg-blue-700 transition-all">
-                        Berkas Sedang Diverifikasi
+                        Berkas Sudah Terkirim
                     </button>
                 @endif
 

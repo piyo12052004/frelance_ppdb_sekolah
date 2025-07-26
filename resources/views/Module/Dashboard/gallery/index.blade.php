@@ -53,7 +53,7 @@
         const modal = document.getElementById('deleteModal');
         const form = document.getElementById('deleteForm');
         const titleSpan = document.getElementById('galleryTitle');
-        
+
         form.action = route;
         titleSpan.textContent = title;
         modal.classList.remove('hidden');
@@ -78,4 +78,4 @@
         }
     });
 </script>
-@endpush 
+@endpush

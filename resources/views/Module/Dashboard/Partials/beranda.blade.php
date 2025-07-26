@@ -445,7 +445,7 @@
                                 </div>
                                 <div>
                                     <h3 class="font-bold text-lg">Website</h3>
-                                    <p class="text-gray-600">Karyagunajaya</p>
+                                    <p class="text-gray-600">ppdb-sekola.my.id</p>
                                 </div>
                             </div>
                         </div>

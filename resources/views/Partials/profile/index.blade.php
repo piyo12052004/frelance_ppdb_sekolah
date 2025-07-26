@@ -253,103 +253,95 @@
                     <div class="w-20 h-1 bg-accent mx-auto"></div>
                 </div>
 
-                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-                    <!-- Guru 1 -->
-                    <div class="bg-gray-50 rounded-lg overflow-hidden shadow-md hover:shadow-lg transition">
-                        <div class="h-48 bg-primary flex items-center justify-center">
-                            <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Acep Soleh Sulaeman"
-                                class="h-full w-full object-cover">
-                        </div>
-                        <div class="p-4">
-                            <h3 class="font-bold text-lg">Acep Soleh Sulaeman, S.Pd</h3>
-                            <p class="text-secondary">Guru PJOK</p>
-                        </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+                <!-- Guru 1 -->
+                <div class="bg-gray-50 rounded-lg overflow-hidden shadow-md hover:shadow-lg transition">
+                    <div class="h-48 bg-primary flex items-center justify-center">
+                        <img src="{{ asset('asset/img/Anggi.jpg') }}" alt="Anggi Rizky Liestyana" class="h-full w-full object-cover">
                     </div>
-
-                    <!-- Guru 2 -->
-                    <div class="bg-gray-50 rounded-lg overflow-hidden shadow-md hover:shadow-lg transition">
-                        <div class="h-48 bg-primary flex items-center justify-center">
-                            <img src="https://randomuser.me/api/portraits/men/45.jpg" alt="Ujang Sujana"
-                                class="h-full w-full object-cover">
-                        </div>
-                        <div class="p-4">
-                            <h3 class="font-bold text-lg">Ujang Sujana, S.Pd.I</h3>
-                            <p class="text-secondary">Guru PAI</p>
-                        </div>
-                    </div>
-
-                    <!-- Guru 3 -->
-                    <div class="bg-gray-50 rounded-lg overflow-hidden shadow-md hover:shadow-lg transition">
-                        <div class="h-48 bg-primary flex items-center justify-center">
-                            <img src="https://randomuser.me/api/portraits/women/45.jpg" alt="Nia Permatasari"
-                                class="h-full w-full object-cover">
-                        </div>
-                        <div class="p-4">
-                            <h3 class="font-bold text-lg">Nia Permatasari, S.Pd</h3>
-                            <p class="text-secondary">Guru Matematika</p>
-                        </div>
-                    </div>
-
-                    <!-- Guru 4 -->
-                    <div class="bg-gray-50 rounded-lg overflow-hidden shadow-md hover:shadow-lg transition">
-                        <div class="h-48 bg-primary flex items-center justify-center">
-                            <img src="https://randomuser.me/api/portraits/women/32.jpg" alt="Nur Asni"
-                                class="h-full w-full object-cover">
-                        </div>
-                        <div class="p-4">
-                            <h3 class="font-bold text-lg">Nur Asni, S.Pd</h3>
-                            <p class="text-secondary">Guru IPA</p>
-                        </div>
-                    </div>
-
-                    <!-- Guru 5 -->
-                    <div class="bg-gray-50 rounded-lg overflow-hidden shadow-md hover:shadow-lg transition">
-                        <div class="h-48 bg-primary flex items-center justify-center">
-                            <img src="https://randomuser.me/api/portraits/men/22.jpg" alt="Ahmad"
-                                class="h-full w-full object-cover">
-                        </div>
-                        <div class="p-4">
-                            <h3 class="font-bold text-lg">Ahmad, A.Md</h3>
-                            <p class="text-secondary">Guru TIK</p>
-                        </div>
-                    </div>
-
-                    <!-- Guru 6 -->
-                    <div class="bg-gray-50 rounded-lg overflow-hidden shadow-md hover:shadow-lg transition">
-                        <div class="h-48 bg-primary flex items-center justify-center">
-                            <img src="https://randomuser.me/api/portraits/men/28.jpg" alt="Fadhil Muhammad"
-                                class="h-full w-full object-cover">
-                        </div>
-                        <div class="p-4">
-                            <h3 class="font-bold text-lg">Fadhil Muhammad, S.Kom</h3>
-                            <p class="text-secondary">Guru TIK</p>
-                        </div>
-                    </div>
-
-                    <!-- Guru 7 -->
-                    <div class="bg-gray-50 rounded-lg overflow-hidden shadow-md hover:shadow-lg transition">
-                        <div class="h-48 bg-primary flex items-center justify-center">
-                            <img src="https://randomuser.me/api/portraits/women/28.jpg" alt="Tyara Annisa Rachmalia"
-                                class="h-full w-full object-cover">
-                        </div>
-                        <div class="p-4">
-                            <h3 class="font-bold text-lg">Tyara Annisa Rachmalia, SE</h3>
-                            <p class="text-secondary">Guru Prakarya</p>
-                        </div>
-                    </div>
-
-                    <!-- Guru 8 -->
-                    <div class="bg-gray-50 rounded-lg overflow-hidden shadow-md hover:shadow-lg transition">
-                        <div class="h-48 bg-primary flex items-center justify-center">
-                            <img src="https://randomuser.me/api/portraits/women/35.jpg" alt="Siti Rosita"
-                                class="h-full w-full object-cover">
-                        </div>
-                        <div class="p-4">
-                            <h3 class="font-bold text-lg">Siti Rosita, S.Pd.I</h3>
-                            <p class="text-secondary">Guru Matematika</p>
-                        </div>
+                    <div class="p-4">
+                        <h3 class="font-bold text-lg">Anggi  Rizky Liestyana, S. Pd</h3>
+                        <p class="text-secondary">Guru Bahasa Inggris</p>
                     </div>
                 </div>
+
+                <!-- Guru 2 -->
+                <div class="bg-gray-50 rounded-lg overflow-hidden shadow-md hover:shadow-lg transition">
+                    <div class="h-48 bg-primary flex items-center justify-center">
+                        <img src="{{ asset('asset/img/Ujang.jpg') }}" alt="Ujang Sujana" class="h-full w-full object-cover">
+                    </div>
+                    <div class="p-4">
+                        <h3 class="font-bold text-lg">Ujang Sujana, S.Pd.I</h3>
+                        <p class="text-secondary">Guru PAI</p>
+                    </div>
+                </div>
+
+                <!-- Guru 3 -->
+                <div class="bg-gray-50 rounded-lg overflow-hidden shadow-md hover:shadow-lg transition">
+                    <div class="h-48 bg-primary flex items-center justify-center">
+                        <img src="{{ asset('asset/img/Siti.png') }}" alt="Nia Permatasari" class="h-full w-full object-cover">
+                    </div>
+                    <div class="p-4">
+                        <h3 class="font-bold text-lg">Siti Rosita, S. Pd I</h3>
+                        <p class="text-secondary">Guru Matematika</p>
+                    </div>
+                </div>
+
+                <!-- Guru 4 -->
+                <div class="bg-gray-50 rounded-lg overflow-hidden shadow-md hover:shadow-lg transition">
+                    <div class="h-48 bg-primary flex items-center justify-center">
+                        <img src="{{ asset('asset/img/Mega.jpg') }}" alt="Mega Andriyanti" class="h-full w-full object-cover">
+                    </div>
+                    <div class="p-4">
+                        <h3 class="font-bold text-lg">Mega Andriyanti, S. Pd</h3>
+                        <p class="text-secondary">Guru Bahasa Indonesia</p>
+                    </div>
+                </div>
+
+                <!-- Guru 5 -->
+                <div class="bg-gray-50 rounded-lg overflow-hidden shadow-md hover:shadow-lg transition">
+                    <div class="h-48 bg-primary flex items-center justify-center">
+                        <img src="{{ asset('asset/img/Nur.jpg') }}" alt="Nur Asni" class="h-full w-full object-cover">
+                    </div>
+                    <div class="p-4">
+                        <h3 class="font-bold text-lg">Nur Asni, S. Pd</h3>
+                        <p class="text-secondary">Guru IPA</p>
+                    </div>
+                </div>
+
+                <!-- Guru 6 -->
+                <div class="bg-gray-50 rounded-lg overflow-hidden shadow-md hover:shadow-lg transition">
+                    <div class="h-48 bg-primary flex items-center justify-center">
+                        <img src="{{ asset('asset/img/image.png') }}" alt="Ayu Fitriana" class="h-full w-full object-cover">
+                    </div>
+                    <div class="p-4">
+                        <h3 class="font-bold text-lg">Ayu Fitriana, S. Pd</h3>
+                        <p class="text-secondary">Guru IPS</p>
+                    </div>
+                </div>
+
+                <!-- Guru 7 -->
+                <div class="bg-gray-50 rounded-lg overflow-hidden shadow-md hover:shadow-lg transition">
+                    <div class="h-48 bg-primary flex items-center justify-center">
+                        <img src="{{ asset('asset/img/Tyara.png') }}" alt="Tyara Annisa Rachmalia" class="h-full w-full object-cover">
+                    </div>
+                    <div class="p-4">
+                        <h3 class="font-bold text-lg">Tyara Annisa Rachmalia, SE</h3>
+                        <p class="text-secondary">Guru PKWU</p>
+                    </div>
+                </div>
+
+                <!-- Guru 8 -->
+                <div class="bg-gray-50 rounded-lg overflow-hidden shadow-md hover:shadow-lg transition">
+                    <div class="h-48 bg-primary flex items-center justify-center">
+                        <img src="{{ asset('asset/img/image.png') }}" alt="Acep Soleh" class="h-full w-full object-cover">
+                    </div>
+                    <div class="p-4">
+                        <h3 class="font-bold text-lg">Acep Soleh Sulaeman, S. Pd</h3>
+                        <p class="text-secondary">Guru PJOK</p>
+                    </div>
+                </div>
+            </div>
 
                 {{-- <div class="text-center mt-8">
                 <button class="bg-primary text-white px-6 py-2 rounded-lg hover:bg-secondary transition">
@@ -367,117 +359,99 @@
                     <div class="w-20 h-1 bg-accent mx-auto"></div>
                 </div>
 
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                    <!-- Paskibra -->
-                    <div
-                        class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition transform hover:-translate-y-2">
-                        <div class="h-48 bg-primary flex items-center justify-center">
-                            <img src="https://images.unsplash.com/photo-1579684385127-1ef15d508118?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
-                                alt="Paskibra" class="h-full w-full object-cover">
-                        </div>
-                        <div class="p-6">
-                            <h3 class="font-bold text-xl mb-2">PASKIBRA</h3>
-                            <p class="text-gray-600 mb-4">Mengembangkan kedisiplinan, kepemimpinan, dan rasa cinta tanah
-                                air melalui latihan baris-berbaris dan pengibaran bendera.</p>
-                            <div class="flex items-center text-secondary">
-                                <i class="fas fa-calendar-alt mr-2"></i>
-                                <span>Setiap Sabtu, 08.00-11.00</span>
-                            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Paskibra -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition transform hover:-translate-y-2">
+                    <div class="h-48 bg-primary flex items-center justify-center">
+                        <img src="{{ asset('asset/img/paskibra.jpg') }}" alt="Paskibra" class="h-full w-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-bold text-xl mb-2">PASKIBRA</h3>
+                        <p class="text-gray-600 mb-4">Melatih kedisiplinan, kerapian, dan kekompakan dalam baris-berbaris serta menanamkan jiwa nasionalisme melalui kegiatan paskibra.</p>
+                        <div class="flex items-center text-secondary">
+                            <i class="fas fa-calendar-alt mr-2"></i>
+                            <span>Setiap Sabtu, 15.00-17.00</span>
                         </div>
                     </div>
+                </div>
 
-                    <!-- Pramuka -->
-                    <div
-                        class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition transform hover:-translate-y-2">
-                        <div class="h-48 bg-primary flex items-center justify-center">
-                            <img src="https://images.unsplash.com/photo-1601758003120-67b5c1f5b0f5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
-                                alt="Pramuka" class="h-full w-full object-cover">
-                        </div>
-                        <div class="p-6">
-                            <h3 class="font-bold text-xl mb-2">PRAMUKA</h3>
-                            <p class="text-gray-600 mb-4">Membentuk karakter siswa yang mandiri, kreatif, dan bertanggung
-                                jawab melalui kegiatan kepramukaan.</p>
-                            <div class="flex items-center text-secondary">
-                                <i class="fas fa-calendar-alt mr-2"></i>
-                                <span>Setiap Jumat, 13.00-15.00</span>
-                            </div>
+                <!-- Pramuka -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition transform hover:-translate-y-2">
+                    <div class="h-48 bg-primary flex items-center justify-center">
+                        <img src="{{ asset('asset/img/pramuka.jpg') }}" alt="Pramuka" class="h-full w-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-bold text-xl mb-2">PRAMUKA</h3>
+                        <p class="text-gray-600 mb-4">Mengembangkan keterampilan kepemimpinan, kemandirian, dan kerja sama melalui kegiatan kepramukaan.</p>
+                        <div class="flex items-center text-secondary">
+                            <i class="fas fa-calendar-alt mr-2"></i>
+                            <span>Setiap Jumat, 15.00-17.00</span>
                         </div>
                     </div>
+                </div>
 
-                    <!-- Seni Tari -->
-                    <div
-                        class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition transform hover:-translate-y-2">
-                        <div class="h-48 bg-primary flex items-center justify-center">
-                            <img src="https://images.unsplash.com/photo-1547153760-18fc86324498?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
-                                alt="Seni Tari" class="h-full w-full object-cover">
-                        </div>
-                        <div class="p-6">
-                            <h3 class="font-bold text-xl mb-2">SENI TARI</h3>
-                            <p class="text-gray-600 mb-4">Mengembangkan bakat seni dan melestarikan budaya Indonesia
-                                melalui berbagai jenis tarian tradisional dan modern.</p>
-                            <div class="flex items-center text-secondary">
-                                <i class="fas fa-calendar-alt mr-2"></i>
-                                <span>Setiap Rabu, 14.00-16.00</span>
-                            </div>
+                <!-- Seni Tari -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition transform hover:-translate-y-2">
+                    <div class="h-48 bg-primary flex items-center justify-center">
+                        <img src="{{ asset('asset/img/seni_tari.jpg') }}" alt="Seni Tari" class="h-full w-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-bold text-xl mb-2">SENI TARI</h3>
+                        <p class="text-gray-600 mb-4">Mengembangkan bakat seni dan melestarikan budaya Indonesia melalui berbagai jenis tarian tradisional dan modern.</p>
+                        <div class="flex items-center text-secondary">
+                            <i class="fas fa-calendar-alt mr-2"></i>
+                            <span>Setiap Senin, 15.00-17.00</span>
                         </div>
                     </div>
+                </div>
 
-                    <!-- Futsal -->
-                    <div
-                        class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition transform hover:-translate-y-2">
-                        <div class="h-48 bg-primary flex items-center justify-center">
-                            <img src="https://images.unsplash.com/photo-1547347298-4074fc3086f0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
-                                alt="Futsal" class="h-full w-full object-cover">
-                        </div>
-                        <div class="p-6">
-                            <h3 class="font-bold text-xl mb-2">FUTSAL</h3>
-                            <p class="text-gray-600 mb-4">Mengembangkan keterampilan bermain futsal, kerja tim, dan
-                                sportivitas melalui latihan rutin dan kompetisi.</p>
-                            <div class="flex items-center text-secondary">
-                                <i class="fas fa-calendar-alt mr-2"></i>
-                                <span>Setiap Selasa & Kamis, 15.00-17.00</span>
-                            </div>
+                <!-- Futsal -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition transform hover:-translate-y-2">
+                    <div class="h-48 bg-primary flex items-center justify-center">
+                        <img src="{{ asset('asset/img/futsal.jpg') }}" alt="Futsal" class="h-full w-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-bold text-xl mb-2">FUTSAL</h3>
+                        <p class="text-gray-600 mb-4">Meningkatkan kebugaran fisik, kecepatan, kelincahan, dan daya tahan.</p>
+                        <div class="flex items-center text-secondary">
+                            <i class="fas fa-calendar-alt mr-2"></i>
+                            <span>Setiap Rabu, 15.00-17.00</span>
                         </div>
                     </div>
+                </div>
 
-                    <!-- Muay Thai -->
-                    <div
-                        class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition transform hover:-translate-y-2">
-                        <div class="h-48 bg-primary flex items-center justify-center">
-                            <img src="https://images.unsplash.com/photo-1594381898411-846e7d193883?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
-                                alt="Muay Thai" class="h-full w-full object-cover">
-                        </div>
-                        <div class="p-6">
-                            <h3 class="font-bold text-xl mb-2">MUAY THAI</h3>
-                            <p class="text-gray-600 mb-4">Mengajarkan seni bela diri Thailand yang melatih fisik, mental,
-                                dan kedisiplinan siswa.</p>
-                            <div class="flex items-center text-secondary">
-                                <i class="fas fa-calendar-alt mr-2"></i>
-                                <span>Setiap Senin & Kamis, 16.00-18.00</span>
-                            </div>
+                <!-- Muay Thai -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition transform hover:-translate-y-2">
+                    <div class="h-48 bg-primary flex items-center justify-center">
+                        <img src="{{ asset('asset/img/muaythai.png') }}" alt="Muay Thai" class="h-full w-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-bold text-xl mb-2">MUAY THAI</h3>
+                        <p class="text-gray-600 mb-4">Mengembangkan keterampilan bela diri dan teknik Muay Thai yang benar</p>
+                        <div class="flex items-center text-secondary">
+                            <i class="fas fa-calendar-alt mr-2"></i>
+                            <span>Setiap Selasa, 15.00-17.00</span>
                         </div>
                     </div>
+                </div>
 
-                    <!-- Marching Band -->
-                    <div
-                        class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition transform hover:-translate-y-2">
-                        <div class="h-48 bg-primary flex items-center justify-center">
-                            <img src="https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
-                                alt="Marching Band" class="h-full w-full object-cover">
-                        </div>
-                        <div class="p-6">
-                            <h3 class="font-bold text-xl mb-2">MARCHING BAND</h3>
-                            <p class="text-gray-600 mb-4">Mengembangkan bakat musik dan kerja tim melalui penampilan
-                                marching band dalam berbagai event.</p>
-                            <div class="flex items-center text-secondary">
-                                <i class="fas fa-calendar-alt mr-2"></i>
-                                <span>Setiap Sabtu, 13.00-16.00</span>
-                            </div>
+                <!-- Marching Band -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition transform hover:-translate-y-2">
+                    <div class="h-48 bg-primary flex items-center justify-center">
+                        <img src="{{ asset('asset/img/MARCHING_BAND.jpg') }}" alt="Marching Band" class="h-full w-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-bold text-xl mb-2">MARCHING BAND</h3>
+                        <p class="text-gray-600 mb-4">Meningkatkan keterampilan memainkan alat musik dan gerak baris-berbaris.</p>
+                        <div class="flex items-center text-secondary">
+                            <i class="fas fa-calendar-alt mr-2"></i>
+                            <span>Setiap Rabu, 15.00-17.00 (SEMENTARA OFF)</span>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
         <!-- Contact Section -->
         {{-- <section id="contact" class="py-16 bg-primary text-white">

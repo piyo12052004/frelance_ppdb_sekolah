@@ -32,7 +32,7 @@ class GalleryController extends Controller
             $image = $request->file('image');
             $imageName = time() . '.' . $image->getClientOriginalExtension();
             $image->move(public_path('images/gallery'), $imageName);
-            
+
             Gallery::create([
                 'title' => $request->title,
                 'description' => $request->description,
@@ -85,6 +85,7 @@ class GalleryController extends Controller
 
     public function destroy(Gallery $gallery)
     {
+        
         if ($gallery->image && file_exists(public_path($gallery->image))) {
             unlink(public_path($gallery->image));
         }
@@ -94,4 +95,4 @@ class GalleryController extends Controller
         return redirect()->route('superadmin.gallery.index')
             ->with('success', 'Galeri berhasil dihapus');
     }
-} 
+}
